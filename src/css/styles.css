@@ -1,10 +1,12 @@
 /* Estilos generales para la pagina */
-html,
+
 body {
-     height: 100%;
      margin: 0;
      padding: 0;
      font-family: Arial, sans-serif;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
 }
 
 header {
@@ -31,20 +33,21 @@ a {
      transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+section {
+     min-height: 100%;
+}
+
 /* Estilos para el footer */
 footer {
      background-color: #333;
      color: #fff;
      padding: 20px;
      text-align: center;
+     margin-top: auto;
 }
 
 footer span {
      font-size: 14px;
-}
-
-section {
-     min-height: 100%;
 }
 
 /* Estilos para la sección "introduction" */
@@ -124,6 +127,19 @@ hr {
      border: none;
      border-top: 1px solid #ccc;
      margin-top: 30px;
+}
+
+/* Estilos para la sección "description" */
+#description {
+     padding: 40px;
+}
+
+#description p {
+     font-size: 24px;
+     font-style: italic;
+     text-align: center;
+     color: #333;
+     margin-bottom: 20px;
 }
 
 /* Estilos para el navBar */

@@ -37,18 +37,72 @@ section {
      min-height: 100%;
 }
 
-/* Estilos para el footer */
-footer {
-     background-color: #333;
-     color: #fff;
-     padding: 20px;
-     text-align: center;
-     margin-top: auto;
+hr {
+     border: none;
+     border-top: 1px solid #ccc;
+     margin-top: 30px;
 }
 
-footer span {
-     font-size: 14px;
+/* Estilos para el navBar */
+.navbar {
+     align-items: center;
+     justify-content: space-between;
+     color: #fff;
+     padding: 10px;
 }
+
+.logo {
+     width: 10%;
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.logo a {
+     align-items: center;
+     text-decoration: none;
+     color: white;
+     display: inline-block;
+     margin-right: 10px;
+}
+
+.logo a:hover {
+     color: #104C72;
+}
+
+.logo img {
+     max-width: 50px;
+     vertical-align: middle;
+}
+
+.logo h1 {
+     font-size: 35px;
+     margin: 0;
+     font-weight: bold;
+}
+
+.pages-indixes {
+     width: 40%;
+     color: white;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.pages-indixes a {
+     text-decoration: none;
+     color: white;
+}
+
+.pages-indixes a:hover {
+     color: #104C72;
+}
+
+.pages-indixes a:last-child {
+     margin-right: 0;
+}
+
 
 /* Estilos para la sección "introduction" */
 .introduction {
@@ -123,11 +177,7 @@ footer span {
      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-hr {
-     border: none;
-     border-top: 1px solid #ccc;
-     margin-top: 30px;
-}
+
 
 /* Estilos para la sección "description" */
 #description {
@@ -142,62 +192,99 @@ hr {
      margin-bottom: 20px;
 }
 
-/* Estilos para el navBar */
-.navbar {
-     align-items: center;
-     justify-content: space-between;
-     color: #fff;
-     padding: 10px;
-}
-
-.logo {
-     width: 10%;
-     color: white;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-}
-
-.logo a {
-     align-items: center;
-     text-decoration: none;
-     color: white;
-     display: inline-block;
-     margin-right: 10px;
-}
-
-.logo a:hover {
-     color: #104C72;
-}
-
-.logo img {
-     max-width: 50px;
-     vertical-align: middle;
-}
-
-.logo h1 {
-     font-size: 35px;
+/* Estilos para la seccion "mentors" */
+/* Estilos para la sección "mentors" */
+#mentors {
+     padding: 20px;
      margin: 0;
-     font-weight: bold;
+     background-color: #f2f2f2;
 }
 
-.pages-indixes {
-     width: 40%;
-     color: white;
-     display: flex;
+#mentors h2 {
+     font-size: 36px;
+     color: #333;
+     margin-bottom: 20px;
+     text-align: center;
+}
+
+#mentors p {
+     font-size: 28px;
+     color: #666;
+     margin-bottom: 20px;
+     text-align: justify;
+}
+
+
+.mentors-list {
+     display: inline-flex;
+     flex-wrap: wrap;
      justify-content: space-around;
-     align-items: center;
+     align-items: baseline;
 }
 
-.pages-indixes a {
-     text-decoration: none;
-     color: white;
+.mentor {
+     background-color: #fff;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+     border-radius: 5px;
+     padding: 15px;
+     margin: 20px;
+     
 }
 
-.pages-indixes a:hover {
-     color: #104C72;
+.mentor-content img {
+     max-width: 20%;
+     margin-bottom: 10px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     -webkit-border-radius: 1.2%;
+     -moz-border-radius: 1.2%;
+     -ms-border-radius: 1.2%;
+     -o-border-radius: 1.2%;
+     border-radius: 1.2%;
 }
 
-.pages-indixes a:last-child {
-     margin-right: 0;
+
+.mentor-content img:hover {
+     transform: scale(1.1);
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.mentor-items h3 {
+     font-size: 28px;
+     margin-bottom: 10px;
+}
+
+.mentor-content {
+     justify-content: space-around;
+}
+
+.mentor-items p {
+     font-size: 20px !important;
+     color: #666;
+     margin-bottom: 10px;
+}
+
+.mentor-items {
+     align-items: start;
+     justify-content: center;
+     width: 60%;
+}
+
+.icons {
+     justify-content: space-between;
+     gap: 50%;
+}
+
+/* Estilos para el footer */
+footer {
+     background-color: #333;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+     margin-top: auto;
+}
+
+footer span {
+     font-size: 14px;
 }

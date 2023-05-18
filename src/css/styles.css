@@ -1,10 +1,10 @@
 /* Estilos generales para la pagina */
-
 html,
 body {
      height: 100%;
      margin: 0;
      padding: 0;
+     font-family: Arial, sans-serif;
 }
 
 header {
@@ -13,22 +13,10 @@ header {
      background-color: rgb(43, 43, 40);
 }
 
-footer {
-     background-color: rgb(43, 43, 40);
-     color: white;
-     height: 2.5%;
-     bottom: 0;
-}
-
-section {
-     align-items: center;
-}
-
 .container-row {
      display: flex;
      flex-direction: row;
      margin: 1%;
-     min-height: 100%;
 }
 
 .container-col {
@@ -43,10 +31,107 @@ a {
      transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Estilos para el footer */
+footer {
+     background-color: #333;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+}
+
+footer span {
+     font-size: 14px;
+}
+
+section {
+     min-height: 100%;
+}
+
+/* Estilos para la sección "introduction" */
+.introduction {
+     justify-content: space-between;
+     align-items: center;
+}
+
+.slogan {
+     width: 40%;
+}
+
+.introduction-img {
+     width: 45%;
+}
+
+#introduction {
+     padding: 40px;
+     background-color: #f2f2f2;
+}
+
+.slogan h2 {
+     font-size: 45px;
+     color: #333;
+     margin-bottom: 20px;
+}
+
+#introduction p {
+     text-align: justify;
+     font-size: 28px;
+     color: #666;
+     margin-bottom: 30px;
+}
+
+#introduction button:first-child {
+     padding: 10px 20px;
+     font-size: 16px;
+     color: #fff;
+     background-color: #007bff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-right: 10px;
+}
+
+#introduction button:last-child {
+     margin-right: 0;
+     padding: 10px 20px;
+     font-size: 16px;
+     color: #fff;
+     background-color: #9CBAD1;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}
+
+#introduction button:hover {
+     background-color: #0056b3;
+}
+
+#introduction img {
+     max-width: 100%;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     -webkit-border-radius: 1.2%;
+     -moz-border-radius: 1.2%;
+     -ms-border-radius: 1.2%;
+     -o-border-radius: 1.2%;
+     border-radius: 1.2%;
+}
+
+#introduction img:hover {
+     transform: scale(1.1);
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+     border: none;
+     border-top: 1px solid #ccc;
+     margin-top: 30px;
+}
+
 /* Estilos para el navBar */
 .navbar {
      align-items: center;
      justify-content: space-between;
+     color: #fff;
+     padding: 10px;
 }
 
 .logo {
@@ -54,13 +139,15 @@ a {
      color: white;
      display: flex;
      justify-content: space-between;
+     align-items: center;
 }
 
 .logo a {
-     display: flex;
      align-items: center;
      text-decoration: none;
      color: white;
+     display: inline-block;
+     margin-right: 10px;
 }
 
 .logo a:hover {
@@ -68,17 +155,22 @@ a {
 }
 
 .logo img {
-     width: 30px;
-     height: 30px;
-     margin-right: 10px;
+     max-width: 50px;
+     vertical-align: middle;
 }
 
+.logo h1 {
+     font-size: 35px;
+     margin: 0;
+     font-weight: bold;
+}
 
 .pages-indixes {
      width: 40%;
      color: white;
      display: flex;
      justify-content: space-around;
+     align-items: center;
 }
 
 .pages-indixes a {
@@ -90,11 +182,6 @@ a {
      color: #104C72;
 }
 
-.pages-indixes a[href="#form-register"] {
-     font-weight: bold;
-     color: #273CCB;
-}
-
-.pages-indixes a[href="#form-register"]:hover {
-     color: #192381;
+.pages-indixes a:last-child {
+     margin-right: 0;
 }

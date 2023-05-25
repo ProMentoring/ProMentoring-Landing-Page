@@ -278,13 +278,28 @@ hr {
 
 /* Estilos para subscriptions */
 #subscriptions .container-row {
-     justify-content: space-evenly;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 40px;
+     padding: 0px;
+     margin: 2% 3%;
+}
+
+@media(max-width: 768px) {
+     #subscriptions .container-row {
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+
+@media(max-width: 480px) {
+     #subscriptions .container-row {
+          grid-template-columns: 1fr;
+     }
 }
 
 #subscriptions>h3 {
      text-align: center;
      font-size: 30px;
-     margin: 40px;
 }
 
 .subscription .container-col {
@@ -293,29 +308,25 @@ hr {
 }
 
 .subscription {
-     width: 20%;
      background-color: #FFFFFF;
      border-radius: 10px;
      border-color: #000000;
      border-style: solid;
      border-width: 2px;
-     padding: 0px;
 }
 
 .subscription h3 {
-     text-align: start;
-     font-size: 25px;
-     padding: 10px 10px 10px;
      text-align: center;
+     font-size: 25px;
      margin: 0px;
+     padding: 20px 0px;
 }
 
 .subscription p {
      text-align: center;
-     margin: 0px 0px 0px;
-     padding: 10px;
-     font-weight: normal;
      font-size: 30px;
+     padding: 10px;
+     margin: 0px;
      background-color: #84A9D0;
 }
 
@@ -338,7 +349,6 @@ hr {
      font-size: 23px;
      color: #FFFFFF;
 }
-
 /*Estilos para las reseñas*/
 #Reviews{
      background-color: #f0f0f0;

@@ -380,9 +380,13 @@ hr {
 }
 
 #container-reviews{
-     display: flex;
+     margin: 20px 10px 0px 10px;
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     column-gap: 20px;
+    /* display: flex;
      align-content: space-around;
-     gap: 20px;
+     gap: 20px;*/
 }
 
 .user{
@@ -408,12 +412,10 @@ hr {
 
 /*Estilos para "contactanos"*/
 #contact-us{
-     height: 500px;
-     margin: 0px 3% 0px 3%;
+     margin: 10px;
      display: flex;
-     /* justify-content: space-between; */
+     justify-content: space-around;
      align-items: center;
-     gap: 100px;
 }
 
 #contact-us img{
@@ -421,11 +423,11 @@ hr {
      height: 400px;
      border-radius: 10px;
 }
-
+/*
 #container-msg{
      width: 700px;
      height: 100%;
-}
+}*/
 
 #container-msg h3 {
      text-align: center;
@@ -444,14 +446,14 @@ hr {
 }
 
 #container-text{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     gap: 20px;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     column-gap: 10px;
+     row-gap: 10px;
 }
 
 .msg-user{
-     width: 300px;
+     width: 21.5vw;
      padding: 10px;
      border-style: solid;
      border-color: #d1d1d1;
@@ -459,8 +461,8 @@ hr {
 }
 
 #msg{
-     width: 640px;
-     height: 150px;
+     width: 46vw;
+     height: 120px;
      padding: 10px;
      border-style: solid;
      border-color: #d1d1d1;
@@ -490,6 +492,8 @@ footer {
      margin: 5px 5px 20px 5px;
      display: flex;
      justify-content: space-between;
+     flex-wrap: wrap;
+     gap: 20px; 
 }
 
 #box-logo{
@@ -504,9 +508,9 @@ footer {
 }
 
 #container-options{
-     width: 600px;
      display: flex;
      justify-content: space-around;
+     gap:20px
 } 
 
 .container-columns{
@@ -538,6 +542,7 @@ footer {
 #footer-bottom{
      display: flex;
      justify-content: space-between;
+     flex-wrap: wrap;
 }
 
 #container-conditions{
@@ -555,6 +560,50 @@ footer {
      color: #838383;
      scale: 1.10;
 }
+
+@media (max-width:1023px){
+     /*media query de Comentarios de los estudiantes*/
+     #container-reviews{
+          grid-template-columns: repeat(2,1fr);
+     }
+     /*media query de los comentarios*/
+     #contact-us img{
+          display: none;
+     }
+     /*media query del footer*/
+     #footer-bottom{
+          flex-direction: column;
+          justify-content: center;
+          gap:20px;
+     }
+     #container-conditions{
+          justify-content: space-evenly;
+     }
+}
+
+@media (max-width:780px){
+     /*media query de Comentarios de los estudiantes*/
+     #container-reviews{
+          grid-template-columns: repeat(1,1fr);
+     }
+     /*media query del footer*/
+     #iconos{
+          width: 100%;
+          justify-content: center;
+     }
+     #container-options{
+          width: 100%;
+          margin: 10px;
+     }
+
+}
+@media (max-width:480px){
+     /*media query del footer*/
+     #container-options{
+          justify-content: space-between;
+     }
+}
+
 
 /* Estilos de sección de beneficios */
 /*-----------------------------------*/

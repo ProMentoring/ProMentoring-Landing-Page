@@ -54,7 +54,6 @@ hr {
 }
 
 .logo {
-     width: 10%;
      color: white;
      display: flex;
      justify-content: space-between;
@@ -85,11 +84,11 @@ hr {
 }
 
 .pages-indixes {
-     width: 40%;
      color: white;
      display: flex;
      justify-content: space-around;
      align-items: center;
+     gap: 15px;
 }
 
 .pages-indixes a {
@@ -103,6 +102,21 @@ hr {
 
 .pages-indixes a:last-child {
      margin-right: 0;
+}
+
+@media (max-width:780px){
+     .logo h1 {
+          font-size: 20px;
+     }
+     .navbar{
+          padding: 5px;
+          margin: 0px;
+     }
+}
+@media (max-width:640px){
+     .logo h1 {
+          display: none;
+     }
 }
 
 

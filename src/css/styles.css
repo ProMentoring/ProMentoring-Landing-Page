@@ -179,6 +179,50 @@ hr {
      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width:1023px){
+     #introduction{
+          padding: 10px;
+     }
+     .slogan h2{
+          font-size: 30px;
+          margin: 10px 0;
+     }
+     .introduction{
+          margin: 0;
+     }
+     #introduction p{
+          font-size: 20px;
+     }
+}
+
+@media (max-width:780px){
+     #introduction{
+          padding: 30px;
+     }
+     .introduction-img{
+          display: none;
+     }
+     .slogan{
+          width: 100%;
+     }
+     .slogan h2{
+          font-size: 40px;
+     }
+     #introduction p{
+          font-size: 30px;
+     }
+}
+@media (max-width:480px){
+     #introduction{
+          padding: 10px 20px 10px 20px;
+     }
+     .slogan h2{
+          font-size: 35px;
+     }
+     #introduction p{
+          font-size: 25px;
+     }
+}
 
 
 /* Estilos para la sección "description" */
@@ -204,10 +248,9 @@ hr {
 
 #mentors h2 {
      font-size: 36px;
-     color: blue;
+     color: black;
      margin-bottom: 20px;
      text-align: center;
-     text-decoration: underline;
 }
 
 #mentors p {
@@ -285,8 +328,7 @@ hr {
      background-color: #FFFFFF;
 }
 #subscriptions> h3{
-     color: blue;
-     text-decoration: underline;
+     color: black;
      font-size: 100px;
 }
 #subscriptions .container-row {
@@ -311,10 +353,8 @@ hr {
 
 #subscriptions h2 {
      text-align: center;
-     color: blue;
+     color: black;
      font-size: 36px;
-     text-decoration: underline;
-
 }
 
 .subscription .container-col {
@@ -373,8 +413,7 @@ hr {
 #Reviews h3 {
      text-align: center;
      font-size: 36px;
-     text-decoration: underline;
-     color: blue;
+     color: black;
      margin-bottom: 40px;
      padding-bottom: 10px;
 }
@@ -384,9 +423,6 @@ hr {
      display: grid;
      grid-template-columns: repeat(4,1fr);
      column-gap: 20px;
-    /* display: flex;
-     align-content: space-around;
-     gap: 20px;*/
 }
 
 .user{
@@ -423,18 +459,12 @@ hr {
      height: 400px;
      border-radius: 10px;
 }
-/*
-#container-msg{
-     width: 700px;
-     height: 100%;
-}*/
 
 #container-msg h3 {
      text-align: center;
      padding-bottom: 20px;
      font-size: 36px;
-     color: blue;
-     text-decoration: underline;
+     color: black;
      margin-bottom: 10px;
 }
 
@@ -480,7 +510,7 @@ hr {
 
 /* Estilos para el footer */
 footer {
-     background-color: #333;
+     background-color: #124e73;
      color: #fff;
      padding: 20px;
      text-align: center;
@@ -625,10 +655,9 @@ footer {
 
 .benefits-section h2 {
      font-size: 40px;
-     color: #0000FF;
+     color: black;
      margin: 0px;
      padding: 30px 0px;
-     text-decoration: underline;
 }
 .benefits-section p {
      color: gray;
@@ -679,10 +708,9 @@ footer {
 
 .features-section h2 {
      font-size: 40px;
-     color: #0000FF;
+     color: black;
      margin: 0px;
      padding: 30px 0px;
-     text-decoration: underline;
 }
 
 .section-title {

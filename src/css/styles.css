@@ -8,9 +8,17 @@ body {
      display: flex;
      flex-direction: column;
 }
-h1, h2, h3, h4,a, p, li{
+
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+li {
      font-family: Bahnschrift;
 }
+
 header {
      padding: 10px;
      margin: 0;
@@ -54,18 +62,17 @@ hr {
 }
 
 .logo {
+     width: 10%;
      color: white;
      display: flex;
      justify-content: space-between;
-     align-items: center;
 }
 
 .logo a {
+     display: flex;
      align-items: center;
      text-decoration: none;
      color: white;
-     display: inline-block;
-     margin-right: 10px;
 }
 
 .logo a:hover {
@@ -84,16 +91,16 @@ hr {
 }
 
 .pages-indixes {
+     width: 40%;
      color: white;
      display: flex;
      justify-content: space-around;
-     align-items: center;
-     gap: 15px;
 }
 
 .pages-indixes a {
      text-decoration: none;
      color: white;
+     font-size: 18px;
 }
 
 .pages-indixes a:hover {
@@ -104,16 +111,23 @@ hr {
      margin-right: 0;
 }
 
-@media (max-width:780px){
+#links-button a {
+     text-decoration: none;
+     color: #000000;
+}
+
+@media (max-width:780px) {
      .logo h1 {
           font-size: 20px;
      }
-     .navbar{
+
+     .navbar {
           padding: 5px;
           margin: 0px;
      }
 }
-@media (max-width:640px){
+
+@media (max-width:640px) {
      .logo h1 {
           display: none;
      }
@@ -193,47 +207,57 @@ hr {
      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width:1023px){
-     #introduction{
+@media (max-width:1023px) {
+     #introduction {
           padding: 10px;
      }
-     .slogan h2{
+
+     .slogan h2 {
           font-size: 30px;
           margin: 10px 0;
      }
-     .introduction{
+
+     .introduction {
           margin: 0;
      }
-     #introduction p{
+
+     #introduction p {
           font-size: 20px;
      }
 }
 
-@media (max-width:780px){
-     #introduction{
+@media (max-width:780px) {
+     #introduction {
           padding: 30px;
      }
-     .introduction-img{
+
+     .introduction-img {
           display: none;
      }
-     .slogan{
+
+     .slogan {
           width: 100%;
      }
-     .slogan h2{
+
+     .slogan h2 {
           font-size: 40px;
      }
-     #introduction p{
+
+     #introduction p {
           font-size: 30px;
      }
 }
-@media (max-width:480px){
-     #introduction{
+
+@media (max-width:480px) {
+     #introduction {
           padding: 10px 20px 10px 20px;
      }
-     .slogan h2{
+
+     .slogan h2 {
           font-size: 35px;
      }
-     #introduction p{
+
+     #introduction p {
           font-size: 25px;
      }
 }
@@ -338,13 +362,15 @@ hr {
 }
 
 /* Estilos para subscriptions */
-#subscriptions{
+#subscriptions {
      background-color: #FFFFFF;
 }
-#subscriptions> h3{
+
+#subscriptions>h3 {
      color: black;
      font-size: 100px;
 }
+
 #subscriptions .container-row {
      display: grid;
      grid-template-columns: repeat(4, 1fr);
@@ -418,8 +444,9 @@ hr {
      font-size: 23px;
      color: #FFFFFF;
 }
+
 /*Estilos para las reseñas*/
-#Reviews{
+#Reviews {
      background-color: #f0f0f0;
      padding: 0% 3% 0% 3%;
 }
@@ -432,27 +459,27 @@ hr {
      padding-bottom: 10px;
 }
 
-#container-reviews{
+#container-reviews {
      margin: 20px 10px 0px 10px;
      display: grid;
-     grid-template-columns: repeat(4,1fr);
+     grid-template-columns: repeat(4, 1fr);
      column-gap: 20px;
 }
 
-.user{
+.user {
      display: flex;
      padding: 10px;
      flex-direction: column;
      align-items: center;
 }
 
-.user img{
+.user img {
      width: 180px;
      height: 140px;
-     border-radius:50%;
+     border-radius: 50%;
 }
 
-.user p{
+.user p {
      line-height: 160%;
      padding-top: 20px;
      font-size: 20px;
@@ -461,14 +488,14 @@ hr {
 }
 
 /*Estilos para "contactanos"*/
-#contact-us{
+#contact-us {
      margin: 10px;
      display: flex;
      justify-content: space-around;
      align-items: center;
 }
 
-#contact-us img{
+#contact-us img {
      width: 450px;
      height: 400px;
      border-radius: 10px;
@@ -482,21 +509,21 @@ hr {
      margin-bottom: 10px;
 }
 
-#form-contact{
+#form-contact {
      display: flex;
      flex-direction: column;
      align-items: center;
      gap: 25px;
 }
 
-#container-text{
+#container-text {
      display: grid;
-     grid-template-columns: repeat(2,1fr);
+     grid-template-columns: repeat(2, 1fr);
      column-gap: 10px;
      row-gap: 10px;
 }
 
-.msg-user{
+.msg-user {
      width: 21.5vw;
      padding: 10px;
      border-style: solid;
@@ -504,7 +531,7 @@ hr {
      border-radius: 10px;
 }
 
-#msg{
+#msg {
      width: 46vw;
      height: 120px;
      padding: 10px;
@@ -514,7 +541,7 @@ hr {
      font-family: Arial, Helvetica, sans-serif
 }
 
-#form-contact input[type="submit"]{
+#form-contact input[type="submit"] {
      width: 100px;
      height: 30px;
      font-family: "Verdana", "Geneva", "Tahoma", "sans-serif";
@@ -531,119 +558,128 @@ footer {
      margin-top: auto;
 }
 
-#container-bottom-items{
+#container-bottom-items {
      padding: 5px;
      margin: 5px 5px 20px 5px;
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
-     gap: 20px; 
+     gap: 20px;
 }
 
-#box-logo{
+#box-logo {
      height: 50px;
      display: flex;
      align-items: center;
-     gap:10px;
+     gap: 10px;
 }
 
-#box-logo img{
+#box-logo img {
      width: 50px;
 }
 
-#container-options{
+#container-options {
      display: flex;
      justify-content: space-around;
-     gap:20px
-} 
+     gap: 20px
+}
 
-.container-columns{
+.container-columns {
      display: flex;
      flex-direction: column;
      gap: 10px;
 }
 
-.container-columns a{
+.container-columns a {
      color: #fff;
      text-decoration: none;
 }
 
-.container-columns a:hover{
+.container-columns a:hover {
      color: #838383;
      scale: 1.05;
 }
 
-#iconos{
+#iconos {
      display: flex;
      align-items: center;
      gap: 10px;
 }
 
-#iconos a img:hover{
+#iconos a img:hover {
      scale: 1.2;
 }
 
-#footer-bottom{
+#footer-bottom {
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
 }
 
-#container-conditions{
+#container-conditions {
      display: flex;
      gap: 20px;
 }
 
-#container-conditions a{
+#container-conditions a {
      font-size: 15px;
      color: #fff;
      text-decoration: none;
 }
 
-#container-conditions a:hover{
+#container-conditions a:hover {
      color: #838383;
      scale: 1.10;
 }
 
-@media (max-width:1023px){
+@media (max-width:1023px) {
+
      /*media query de Comentarios de los estudiantes*/
-     #container-reviews{
-          grid-template-columns: repeat(2,1fr);
+     #container-reviews {
+          grid-template-columns: repeat(2, 1fr);
      }
+
      /*media query de los comentarios*/
-     #contact-us img{
+     #contact-us img {
           display: none;
      }
+
      /*media query del footer*/
-     #footer-bottom{
+     #footer-bottom {
           flex-direction: column;
           justify-content: center;
-          gap:20px;
+          gap: 20px;
      }
-     #container-conditions{
+
+     #container-conditions {
           justify-content: space-evenly;
      }
 }
 
-@media (max-width:780px){
+@media (max-width:780px) {
+
      /*media query de Comentarios de los estudiantes*/
-     #container-reviews{
-          grid-template-columns: repeat(1,1fr);
+     #container-reviews {
+          grid-template-columns: repeat(1, 1fr);
      }
+
      /*media query del footer*/
-     #iconos{
+     #iconos {
           width: 100%;
           justify-content: center;
      }
-     #container-options{
+
+     #container-options {
           width: 100%;
           margin: 10px;
      }
 
 }
-@media (max-width:480px){
+
+@media (max-width:480px) {
+
      /*media query del footer*/
-     #container-options{
+     #container-options {
           justify-content: space-between;
      }
 }
@@ -673,6 +709,7 @@ footer {
      margin: 0px;
      padding: 30px 0px;
 }
+
 .benefits-section p {
      color: gray;
      font-size: 18px;
@@ -691,6 +728,7 @@ footer {
      font-size: 28px;
      margin-bottom: 10px;
 }
+
 @media(max-width: 768px) {
      .benefits-section .container {
           grid-template-columns: repeat(2, 1fr);
@@ -749,6 +787,7 @@ footer {
      font-size: 28px;
      margin-bottom: 10px;
 }
+
 @media(max-width: 768px) {
      .features-section .container {
           grid-template-columns: repeat(2, 1fr);
